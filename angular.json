@@ -58,8 +58,8 @@
               "src/assets"
             ],
             "styles": [
+              
               "C:/Users/visc/Angular web/Vincent-Web/node_modules/bulma/css/bulma.css",
-              "C:/Users/visc/Documents/Angular/Vincent-Web-vinc01/node_modules/bulma/css",
               "src/styles.scss"
             ],
             "scripts": []
