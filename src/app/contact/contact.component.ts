@@ -15,36 +15,43 @@ import { Component, OnInit } from '@angular/core';
     <div class="container">
       
       <form>
-      
+      <!-- name -->
       <div class="field">
-        <label class="label">Email</label>
+        <label class="label">Name</label>
         <input type="text" name="name" class="input">
       </div>
-      
+      <!-- email -->
       <div class="field">
         <label class="label">Email</label>
-        <input type="text" name="name" class="input">
+        <input type="email" name="email" class="input">
       </div>
-      
+      <!-- messsage -->
       <div class="field">
-      <label class="label">Email</label>
-      <input type="text" name="name" class="input">
+      <label class="label">Your message</label>
+      <textarea name="message" class="textarea"></textarea>
       </div>
 
       </form>
 
+      <!-- submit button -->
+
+      <button type="submit" class="button is-large is-warning">
+        send
 
   `,
-  styles: [
-  ]
+  styles: []
 })
 export class ContactComponent implements OnInit {
-
-  //name;
   
+  name: any;
+  email: any;
+  message: any;
   constructor() { }
 
   ngOnInit(): void {
+
+    //create api call?
+    //create the form based on api fields?
   }
 
 }
