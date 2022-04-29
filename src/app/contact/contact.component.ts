@@ -14,29 +14,37 @@ import { Component, OnInit } from '@angular/core';
     <section class="section">
     <div class="container">
       
-      <form>
+      <form (ngSubmit)="submitForm()">
       <!-- name -->
       <div class="field">
         <label class="label">Name</label>
-        <input type="text" name="name" class="input">
+        <input 
+        type="text"
+        name="name"
+        class="input"
+        [(ngModel)]="name"
+        required>
       </div>
       <!-- email -->
       <div class="field">
         <label class="label">Email</label>
-        <input type="email" name="email" class="input">
+        <input 
+         type="email"
+         name="email"
+         class="input"
+         [(ngModel)]="email">
       </div>
       <!-- messsage -->
       <div class="field">
       <label class="label">Your message</label>
-      <textarea name="message" class="textarea"></textarea>
+      <textarea name="message" class="textarea" [(ngModel)]="message"></textarea>
       </div>
+      
+      <!-- submit button -->
+      <button type="submit" class="button is-large is-warning"> send </button>
+        
 
       </form>
-
-      <!-- submit button -->
-
-      <button type="submit" class="button is-large is-warning">
-        send
 
   `,
   styles: []
@@ -48,10 +56,15 @@ export class ContactComponent implements OnInit {
   message: any;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {}
+
+    submitForm() 
+    {
+      alert('i am testing submit form')
+    }
 
     //create api call?
     //create the form based on api fields?
-  }
+  
 
 }
