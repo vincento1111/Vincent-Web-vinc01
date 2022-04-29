@@ -59,7 +59,7 @@
             ],
             "styles": [
               
-              "C:/Users/visc/Angular web/Vincent-Web/node_modules/bulma/css/bulma.css",
+              "./node_modules/bulma/css/bulma.css",
               "src/styles.scss"
             ],
             "scripts": []
