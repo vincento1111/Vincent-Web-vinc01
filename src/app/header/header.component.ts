@@ -9,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
       <a class="navbar-item">
         <img src="assets/img/angular-logo.png" >
         </a>
-    </div>    
+    </div>  
+    <!-- menu -->
+      <div class="navbar-menu">
+      <div class="navbar-end">
+
+      <a class="navbar-item" routerLink="/">Home</a>
+      <a class="navbar-item" routerLink="/contact">Contact</a>
+
+    
   </div>
   `,
   styles: [
